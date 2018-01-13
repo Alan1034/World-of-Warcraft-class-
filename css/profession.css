@@ -1,0 +1,135 @@
+#box{
+    background-image: url("../images/profession/LCLLDF7CKCHB1474338219060.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.profession{
+    width: 1329px;
+    height: 1418px;
+    position: absolute;
+    top: 800px;
+
+}
+.profession ul li a{
+    width: 645px;
+    height: 212px;
+    float: left;
+    background-color: #211510;
+    border: 1px solid #504137;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+.Card-images{
+    /*background-image: url("../images/profession/WTZV6QLQWMGA1472462584161.jpg");*/
+    width: 212px;
+    height: 212px;
+    float:left;
+    background-size: cover;
+    border-right: 1px solid #504137 ;
+}
+.Card-content{
+    width: 429px;
+    height: 212px;
+    float: left;
+    position: relative;
+}
+.Card-title{
+    font-family: Arial,Helvetica,"微软雅黑","Microsoft YaHei","Hei SC",sans-serif;
+    font-size: 1.728rem;
+    color: #f8b700;
+    width: 389px;
+    height: 31px;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+.Card-subtitle{
+    color: #b1997f;
+    font-family: "Open Sans",Arial,Helvetica,sans-serif;
+    width: 389px;
+    height: 21px;
+    position: absolute;
+    top: 55px;
+    left: 20px;
+}
+.Card-font{
+    font-size: 14px;
+    line-height: 1.5em;
+    font-weight: 400;
+    font-family: "Open Sans",Arial,Helvetica,sans-serif;
+    color: #fff;
+    width: 389px;
+    height: 84px;
+    position: absolute;
+    top: 90px;
+    left: 20px;
+}
+/*眼盒*/
+.eye_list{
+   position: fixed;
+    width: 1226px;
+    bottom: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    animation:eye_list 2s infinite ;
+    animation-iteration-count:1;
+    /*position: relative;*/
+}
+@keyframes eye_list {
+    0%{top:580px}
+    100%{top:650px}
+}
+.eye_list_open{
+    position: absolute;
+    top: 580px;
+    width: 1226px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation:eye_list_open 1s infinite;
+    animation-iteration-count:1;
+}
+@keyframes eye_list_open {
+    0%{top:650px }
+    100%{top:580px}
+}
+.eye_list_open li{
+    float: left;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+.eye_list li{
+    float: left;
+    margin-left: 6px;
+    margin-right: 6px;
+    /*position: relative;*/
+}
+.eye_box{
+    border: 2px solid #3f2a22;
+    /*position: absolute;*/
+}
+.eye_top{
+    width: 290px;
+    height: 50px;
+    background-color: #211510;
+    position: relative;
+}
+.eye_text{
+    width: 290px;
+    text-align: center;
+    color: #f8b700;
+    position: absolute;
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    font-weight: 700;
+}
+.eye_li{
+    transition:transform 1s
+    /*height: 300px;*/
+}
+.eye_li:hover {
+    transform: translateY(-85%);
+}
